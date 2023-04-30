@@ -178,219 +178,218 @@ Minimize the VM and on the personal computer open the “Command Line Prompt” 
 <br />
 <br />
 Go back to the VM select the “Start Menu” and type in “wf.msc”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/2gA0r94.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on Windows “Defender Firewall Properties” and select “Domain Profile” and turn off “Firewall state”:  <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/yGLpeJu.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -Select “Private Profile” and turn off “Firewall state” <br />
 -Select “Public Profile” and turn off “Firewall state” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/OIaACv4.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -Select “Apply” and then select “OK” <br />
 *The personal computer should be able to ping the VM since echo requests are allowed* <br />
 <br />
 <br />
 Go back to the Virtual Machine and open up the web browser: <br />
 -Type in https://github.com/joshmadakor1/Sentinel-Lab  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on “Custom_Security_Log_Exporter.ps1” and copy the code:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/IIIC0Yt.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+ <img src="https://i.imgur.com/Z3HGTbW.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Open “PowerShell ISE” on the VM:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/nfanyw5.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on “New” and paste the code:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/TPbJYob.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Save on the Desktop as “Log_Exporter:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/BGBDBCF.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Get Geolocation.io API Key to insert into code: <br />
 - Go to https://ipgeolocation.io/ <br />
 - Click on “Sign Up” and fill in the form <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/pDnRVoc.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Log In to https://ipgeolocation.io/:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/pLeqsou.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Obtain your API key:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/3OCl8Xc.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Insert it into the code:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/fy5IlKJ.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Run the script:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/yiRbLJ6.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Go back to Azure and create a custom by typing “Log Analytics Workspace” in the search bar: <br />
 Click on the workspace, “law-honeypot1” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/ER0QVft.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 In the drop-down list go under “Settings” and click on “Custom logs”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/ewb2xpn.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on “Add custom log”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/G2uSkfX.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Go back to the VM and copy the log: <br />
 -Press Windows key + R and type in “C:\ProgramData\” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/BYRTKH3.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Open up the “failed_rdp” text document and copy the contents in it:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/jjMLSyY.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Open up “NotePad” in the personal desktop and paste the log in:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/qUNXOWy.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Save on the Desktop as “failed_rdp.log”:  <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/B2G4VuR.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 In “Sample log” browse the file and select “failed_rdp.log” as the sample log to train log analytics what to look for:  <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/Z0fsyZP.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/hAvl2Z5.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Click “Next” to see the preview then select “Next”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/szSIi4P.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 In “collection paths” under “Type” select “Windows” and under “Path” type “C:\programdata\failed_rdp.log”. Press “Next”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/Svn3Xn1.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Under “Details” for “Custom log name *” type in “FAILED_RDP_WITH_GEO” and select “Next”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/BAfaZfs.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Press “Create”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/sF3b4q6.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 *Under Logs we can see the custom entries* *”Security Event” is the windows log event that we can use immediately” <br />
 <br />
 <br />
 Click "Run" for logs to come through:  <br/>
 *Wait 10-15 minutes for the logs to start populating* <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/zoOF3nE.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Extract certain fields from the raw data:  <br />
 -Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/CGrdPEp.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 - For Latitude, Highlight the field, in “Field Title” type in “latitude”, in “Field Type” select “Numeric”, and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/Nb7dY3h.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/cuudDwM.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/BElaYAr.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For Longitude, Highlight the field, in “Field Title” type in “longitude”, in “Field Type” select “Numeric”, and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/sXwzsZ0.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 *Sometimes it selects the wrong field so you have to edit it to train the extract algorithm and highlight the correct field* <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/jEAiyTs.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/qshWNeL.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For Destination Host, Highlight the field, in “Field Title” type in “destinationhost”, in Field Type” select “Text” and click on “Extract”, then click on “Save Extraction” <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/px5j42Q.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For username, Highlight the field, in “Field Title” type in “username”, in Field Type” select “Text” and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/FuXiiXM.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/zcXgwKQ.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For Source Host (IP address), Highlight the field, in “Field Title” type in “sourcehost”, in Field Type” select “Text” and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/EkaQ1oI.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/QF3gsls.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For State, Highlight the field, in “Field Title” type in “state”, in Field Type” select “Text” and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/N7BipcE.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/EVckjdV.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For Country, Highlight the field, in “Field Title” type in “country”, in Field Type” select “Text” and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/0OywapV.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/AQfLQUj.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For Label (to label stuff on the map [country – IP address]), Highlight the field, in “Field Title” type in “label”, in Field Type” select “Text” and click on “Extract”, then click on “Save Extraction” <br />
 <br />
 <br />
 Right-click the date (ex. 3/13/2023, 11:27:47.079 PM) and click on “Extract fields from ‘FAILED_RDP_WITH_GEO_CL’”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/CqdFCI9.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -For Timestamp, Highlight the field, in “Field Title” type in “timestamp”, in Field Type” select “Date/Time (ISO 8601 Format)” and click on “Extract”, then click on “Save Extraction” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/XiSUE1d.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Run the Log Analytics, the custom fields should populate but no data will be shown *data will populate on the subsequent logs*:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Go back to actual computer for testing and log into our VM via “Remote Desktop Connection” and insert our VM IP address and fail the login to make sure that the logs are coming in and getting parsed out correctly *Should populate in PowerShell ISE and then in Azure Log Analytics in 5-10 minutes*:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Wait 5-10 minutes then run the Log Analytics, our failed login should populate with the custom fields:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Open a new tab and go to https://portal.azure.com/ , in the search bar type in “Sentinel” and click on it:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/UYExIOS.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on “law-honeypot1” and select “Overview”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/7bPpVlH.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Under “Threat management” select on “Workbooks”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/x6ce5Xy.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on “Add workbook”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/BLjQauT.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Click on “Edit”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/UxpZV64.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Remove the 2 default widgets: <br />
 -Click on the 3 dots (…) and select “Remove” and Select “Yes”  <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/61VNGJ1.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/8m6ocIp.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Click on “Add” and select “Add query”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/vg2aOU5.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -Paste the query <br/>
 FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, latitude_CF, <br/> longitude_CF, country_CF, label_CF, destinationhost_CF <br />
 | where destinationhost_CF != "samplehost" <br />
 | where sourcehost_CF != "" <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/nlR1m15.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 - Press “Run Query” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/W67oEhD.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Under “Visualization” select “Map”: <br />
@@ -401,19 +400,19 @@ Under “Visualization” select “Map”: <br />
 -Under “Metric Value” select “event_count” <br />
 -Press “Apply” <br />
 -Press “Save and Close” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/fj3qX8g.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/DB8SElj.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
 <br />
 Save the map and in “Title” input “Failed RDP World Map”: <br />
 -For “Location” select “(US) West US 2” <br />
 -Select “Save” <br />
 -Select “Done Editing” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/v24Pcnj.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Turn on Auto refresh for “5 minutes”:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
+<img src="https://i.imgur.com/7QXZcwR.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 *Make sure the PowerShell script in the VM is running” <br />
 <br />
 <br />
@@ -423,11 +422,11 @@ Fix map plot sizes by clicking on “Map Settings” <br />
 -Press “Save and Close” <br />
 -Select the Save Icon and select “Overwrite their changes” <br />
 -Select “Done Editing” <br />
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/fgVnAye.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
 Observe the Map:  <br/>
-<img src="https://i.imgur.com/oN3CTOg.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
+<img src="https://i.imgur.com/ebRWFAv.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
  
