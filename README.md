@@ -28,8 +28,8 @@ Go to https://portal.azure.com/: <br />
 <img src="https://i.imgur.com/CxArIyU.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
-To create our VM type in “Virtual Machine” in the search bar and under services click on “Virtual Machine”: <br />
--Will be exposed on the internet which will be attacked/ our honeypot <br />
+To create our VM type in “Virtual Machine” in the search bar and under "Services" click on “Virtual Machine”: <br />
+*The VM be exposed on the internet which will be attacked/ our honeypot* <br />
 <img src="https://i.imgur.com/OAsyjyQ.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
@@ -38,17 +38,15 @@ Create a new resource group “Honeypotlab”: <br />
 <br />
 <br />
 Name the VM “honeypot”: <br />
-- For Region select “(US) West US 3” which is the data center it’s going to exist in <br />
+- For "Region" select “(US) West US 3” which is the data center it’s going to exist in <br />
 <img src="https://i.imgur.com/c8q9zuz.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
-For “Administrator account” type in the following for credentials: <br />
--Username: nameadmin <br />
--Password: xxxxxxx  <br />
+For “Administrator account” create a username and password <br />
 <img src="https://i.imgur.com/T715HZp.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
-Under licensing click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. *”:  <br />
+Under licensing click the box that says “I confirm I have an eligible Windows 10 license with multi-tenant hosting rights.”:  <br />
 <img src="https://i.imgur.com/kC6LRvU.png" height="80%" width="80%" alt="SIEM Lab Steps"/>
 <br />
 <br />
@@ -62,7 +60,8 @@ Select “Next” until you get to “Networking”
 Select “Add inbound rule”:  <br />
 <img src="https://i.imgur.com/S4Q8RPH.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -Under “Destination port ranges” type in “*” for anything <br />
--Under “Protocol” select “Anything” and under “Action” select “Allow” <br />
+-Under “Protocol” select “Anything” <br />
+-Under “Action” select “Allow” <br />
 -Under “Priority” type in “100” <br />
 -Name the inbound security rule “DANGER_ANY_IN” and then select “Add” <br />
 *this is going to allow all traffic from the internet into our virtual machine* <br />
@@ -83,7 +82,7 @@ Click on “Create log analytics workspace” *where the logs will be stored*:  
 <img src="https://i.imgur.com/tc2hR7W.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 -Select the resource group “Honeypotlab” <br/>
 -Under “Instance details” for the “Name” type in “law-honeypot1” <br />
--For the region select “West US 2” and select “Review + Create” <br />
+-For the "Region" select “West US 3” and select “Review + Create” <br />
 -Click “Create” <br/>
 <img src="https://i.imgur.com/fmUcDmV.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
 <br />
@@ -169,7 +168,8 @@ Click on “Windows Logs” and click on “Security” and all the security eve
 <br />
 Select the log labeled “Audit Failure” and observe the IP address:  <br/>
 <img src="https://i.imgur.com/s2U5rMF.png" height="80%" width="80%" alt="SIEM Lab Steps"/> <br />
-*We’re going to programmatically take the IP address with PowerShell and then use an IPG location API. Essentially, we’re going to post the IP address to the API and then the API is going to return the attackers location**We’re going to turn off the firewall so its susceptible to it so it can respond to icmp echo requests so people can discover it on the internet faster. <br />
+*We’re going to programmatically take the IP address with PowerShell and then use an IP Geolocation API. Essentially, we’re going to post the IP address to the API and then the API is going to return the attackers location* <br />
+*We’re going to turn off the firewall so its susceptible to it so it can respond to ICMP Echo requests so people can discover it on the internet faster. <br />
 <br />
 <br />
 Minimize the VM and on the personal computer open the “Command Line Prompt” and type in “ping PublicIPAddress -t”:  <br />
