@@ -14,6 +14,7 @@ The Powershell script in this repository is responsible for parsing out Windows 
 
 <h2>Utilities Used </h2>
 
+- <b>Microsoft Azure</b>
 - <b>ipgeolocation.io:</b> IP Address to Geolocation API
 
 <h2>Program walk-through:</h2>
