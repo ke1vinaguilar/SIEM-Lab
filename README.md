@@ -8,7 +8,7 @@ The Powershell script in this repository is responsible for parsing out Windows 
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Languages and Used</h2>
 
 - <b>PowerShell:</b> Extract RDP failed logon logs from Windows Event Viewer
 
