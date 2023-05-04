@@ -2,19 +2,19 @@
 
 
 <h2>Description</h2>
-In this lab we're going to walk through how to create am Active Directory home lab Environment using Oracle Virtual Box. Configuring and running this lab will definitely help develop your understanding of how active directory and windows networking works, so I'd highly recommnend running through it a couple times, ask questions where stuff is unclear, and eventually try to build it on your own without watching. Please let me know if you have any questions!
+In this lab I will setup Azure Sentinel (SIEM) and connect it to a live virtual machine acting as a honey pot. We will observe live attacks (RDP Brute Force) from all around the world. I will use a custom PowerShell script to look up the attackers Geolocation information and plot it on an Azure Sentinel Map!
+
+The Powershell script in this repository is responsible for parsing out Windows Event Log information for failed RDP attacks and using a third party API to collect geographic information about the attackers location.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Oracle Virtual Box</b>
+- <b>PowerShell:</b> Extract RDP failed logon logs from Windows Event Viewer
 
-<h2>Environments Used </h2>
+<h2>Utilities Used </h2>
 
-- <b>Windows 10 </b> (21H2)
-- <b>Servers 2019</b>
+- <b>ipgeolocation.io:</b> IP Address to Geolocation API
 
 <h2>Program walk-through:</h2>
 
